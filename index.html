@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay What You Want Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="w3-container w3-teal w3-center w3-padding">
+        <h1>Sweet Delights Bakery</h1>
+        <p>Pay what you want for fresh baked goods!</p>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="w3-container w3-padding">
+        <h2 class="w3-center">Our Menu</h2>
+        <p class="w3-center">Choose your baked goods and pay what you want!</p>
+
+        <div class="w3-row w3-padding-16">
+            <!-- Product 1: Cupcake -->
+            <div class="w3-col l4 m6 w3-padding">
+                <div class="w3-card w3-white">
+                    <div class="w3-container">
+                        <h3>Cupcake</h3>
+                        <p>Fluffy vanilla cupcake with your choice of frosting.</p>
+                        <p><strong>Suggested: $3+</strong></p>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="YOUR_CUPCAKE_BUTTON_ID">
+                            <input type="hidden" name="on0" value="Baked Good">
+                            <input type="hidden" name="os0" value="Cupcake">
+                            <input type="number" name="amount" placeholder="Enter amount" min="0" step="0.01" required>
+                            <button type="submit" class="w3-button w3-teal w3-block">Add to Cart</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2: Cookie -->
+            <div class="w3-col l4 m6 w3-padding">
+                <div class="w3-card w3-white">
+                    <div class="w3-container">
+                        <h3>Cookie</h3>
+                        <p>Freshly baked chocolate chip cookie.</p>
+                        <p><strong>Suggested: $2+</strong></p>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="YOUR_COOKIE_BUTTON_ID">
+                            <input type="hidden" name="on0" value="Baked Good">
+                            <input type="hidden" name="os0" value="Cookie">
+                            <input type="number" name="amount" placeholder="Enter amount" min="0" step="0.01" required>
+                            <button type="submit" class="w3-button w3-teal w3-block">Add to Cart</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3: Bread Loaf -->
+            <div class="w3-col l4 m6 w3-padding">
+                <div class="w3-card w3-white">
+                    <div class="w3-container">
+                        <h3>Bread Loaf</h3>
+                        <p>Homemade sourdough or whole wheat bread.</p>
+                        <p><strong>Suggested: $5+</strong></p>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="YOUR_BREAD_BUTTON_ID">
+                            <input type="hidden" name="on0" value="Baked Good">
+                            <input type="hidden" name="os0" value="Bread Loaf">
+                            <input type="number" name="amount" placeholder="Enter amount" min="0" step="0.01" required>
+                            <button type="submit" class="w3-button w3-teal w3-block">Add to Cart</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tipping Section -->
+    <section class="w3-container w3-padding w3-teal">
+        <h2 class="w3-center">Support Us</h2>
+        <p class="w3-center">If you enjoyed our baked goods, feel free to leave a tip!</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="YOUR_TIP_BUTTON_ID">
+            <input type="number" name="amount" placeholder="Enter tip amount" min="0" step="0.01" required>
+            <button type="submit" class="w3-button w3-white w3-block">Leave a Tip</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-teal w3-center w3-padding">
+        <p>© 2026 Sweet Delights Bakery | Contact: your-email@example.com</p>
+    </footer>
+</body>
+</html>
 
