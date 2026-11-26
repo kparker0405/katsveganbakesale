@@ -1,106 +1,281 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pay What You Want Bakery</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A 'Pay What You Want' bakery offering fresh cupcakes, cookies, and bread."
+    />
+    <title>The Bake Sale</title>
+    <!-- W3.CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css" />
+    <!-- Google Fonts (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    
+  </head>
+  <body>
     <!-- Header -->
-    <header class="w3-container w3-teal w3-center w3-padding">
-        <h1>Sweet Delights Bakery</h1>
-        <p>Pay what you want for fresh baked goods!</p>
+    <header class="w3-container w3-theme-dark w3-center w3-padding-64">
+      <h1
+        class="w3-jumbo w3-text-white"
+        style="font-family: &quot;Poppins&quot;, sans-serif; font-weight: 300"
+      >
+        Kat's Vegan Bake Sale
+      </h1>
+      <p
+        class="w3-large w3-text-white"
+        style="font-family: &quot;Poppins&quot;, sans-serif; font-weight: 300"
+      >
+        <strong>Pay what you can</strong> for vegan baked goods, all proceeds benefitting the
+        Ann Arbor & Ypsilanti, Michigan Community
+      </p>
+      <div class="w3-margin-top">
+        <a
+          href="#charity"
+          class="w3-button w3-theme-light w3-padding-large"
+          style="font-family: &quot;Poppins&quot;, sans-serif; font-weight: 300"
+        >
+          Read About This Month's Charity
+        </a>
+      </div>
     </header>
 
-    <!-- Menu Section -->
-    <section class="w3-container w3-padding">
-        <h2 class="w3-center">Our Menu</h2>
-        <p class="w3-center">Choose your baked goods and pay what you want!</p>
+    <!-- Main Content -->
+    <main class="w3-container w3-padding-32">
+      <!-- Specials Section -->
+      <section id="specials" class="w3-center w3-padding-32">
+        <h2
+          class="w3-jumbo"
+          style="font-family: &quot;Poppins&quot;, sans-serif; font-weight: 300"
+        >
+          January Bakery Specials
+        </h2>
+        <h2
+          class="w3-xlarge"
+          style="font-family: &quot;Poppins&quot;, sans-serif; font-weight: 300"
+        >
+          Place Your Order
+        </h2>
+        <p
+          class="w3-xlarge"
+          style="
+            color: #666;
+            font-family: &quot;Poppins&quot;, sans-serif;
+            font-weight: 300;
+          "
+        >
+          Each month, the options will change. Pay what you can, all proceeds go to a local charity. Orders must be
+          placed by <strong>Monday at 5 PM</strong> for pickup on
+          <strong>Saturday</strong>.
+        </p>
 
-        <div class="w3-row w3-padding-16">
-            <!-- Product 1: Cupcake -->
-            <div class="w3-col l4 m6 w3-padding">
-                <div class="w3-card w3-white">
-                    <div class="w3-container">
-                        <h3>Cupcake</h3>
-                        <p>Fluffy vanilla cupcake with your choice of frosting.</p>
-                        <p><strong>Suggested: $3+</strong></p>
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                            <input type="hidden" name="cmd" value="_s-xclick">
-                             <input type="hidden" name="hosted_button_id" value="2D7HMHF3QQCMC" />
-                              <input type="hidden" name="currency_code" value="USD" />
-                            <input type="hidden" name="on0" value="Baked Good">
-                            <input type="hidden" name="os0" value="Cupcake">
-                            <input type="number" name="amount" placeholder="Enter amount" min="0" step="0.01" required>
-                            <button type="submit" class="w3-button w3-teal w3-block">Add to Cart</button>
-                        </form>
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-  <input type="hidden" name="cmd" value="_s-xclick" />
-  <input type="hidden" name="hosted_button_id" value="2D7HMHF3QQCMC" />
-  <input type="hidden" name="currency_code" value="USD" />
-  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
-</form>
-                    </div>
-                </div>
-            </div>
+        <div class="w3-row-padding w3-center" style="margin-top: 2rem">
+ 
+             <div class="w3-row-padding w3-center" style="margin-top: 2rem;">
+        <!-- Bread Loaf -->
+        <div class="w3-col l4 m6 w3-padding">
+            <div class="w3-card w3-white w3-hover-shadow">
+                <img src="https://via.placeholder.com/400x300/F5F5F5/000000?text=Bread" alt="Bread Loaf" style="width:100%; height: auto;">
+                <div class="w3-container">
+                    <h3 style="font-family: 'Poppins', sans-serif; font-weight: 400;">Bread Loaf</h3>
+                    <p style="color: #666;">Homemade sourdough or whole wheat bread.</p>
+                    <p style="font-style: italic; color: #888;"><em>Suggested: $5+</em></p>
+                                <button type="submit" class="w3-button w3-block w3-black w3-margin-top"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdXPYBZ9NT5e8OdJvDNwhE5vKVx5fH161CF54Gbvq0slnbnOA/viewform?usp=pp_url&entry.224416707=Bread" target="_blank">Fill Out the Order Form</a></button>
 
-            <!-- Product 2: Cookie -->
-            <div class="w3-col l4 m6 w3-padding">
-                <div class="w3-card w3-white">
-                    <div class="w3-container">
-                        <h3>Cookie</h3>
-                        <p>Freshly baked chocolate chip cookie.</p>
-                        <p><strong>Suggested: $2+</strong></p>
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                            <input type="hidden" name="cmd" value="_s-xclick">
-                            <input type="hidden" name="hosted_button_id" value="YOUR_COOKIE_BUTTON_ID">
-                            <input type="hidden" name="on0" value="Baked Good">
-                            <input type="hidden" name="os0" value="Cookie">
-                            <input type="number" name="amount" placeholder="Enter amount" min="0" step="0.01" required>
-                            <button type="submit" class="w3-button w3-teal w3-block">Add to Cart</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+               
 
-            <!-- Product 3: Bread Loaf -->
-            <div class="w3-col l4 m6 w3-padding">
-                <div class="w3-card w3-white">
-                    <div class="w3-container">
-                        <h3>Bread Loaf</h3>
-                        <p>Homemade sourdough or whole wheat bread.</p>
-                        <p><strong>Suggested: $5+</strong></p>
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                            <input type="hidden" name="cmd" value="_s-xclick">
-                            <input type="hidden" name="hosted_button_id" value="YOUR_BREAD_BUTTON_ID">
-                            <input type="hidden" name="on0" value="Baked Good">
-                            <input type="hidden" name="os0" value="Bread Loaf">
-                            <input type="number" name="amount" placeholder="Enter amount" min="0" step="0.01" required>
-                            <button type="submit" class="w3-button w3-teal w3-block">Add to Cart</button>
-                        </form>
-                    </div>
+
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Tipping Section -->
-    <section class="w3-container w3-padding w3-teal">
-        <h2 class="w3-center">Support Us</h2>
-        <p class="w3-center">If you enjoyed our baked goods, feel free to leave a tip!</p>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="hosted_button_id" value="YOUR_TIP_BUTTON_ID">
-            <input type="number" name="amount" placeholder="Enter tip amount" min="0" step="0.01" required>
-            <button type="submit" class="w3-button w3-white w3-block">Leave a Tip</button>
-        </form>
-    </section>
+        <!-- Dog Treats -->
+        <div class="w3-col l4 m6 w3-padding">
+            <div class="w3-card w3-white w3-hover-shadow">
+                <img src="https://via.placeholder.com/400x300/F5F5F5/000000?text=Dog+Treats" alt="Vegan Dog Treats" style="width:100%; height: auto;">
+                <div class="w3-container">
+                    <h3 style="font-family: 'Poppins', sans-serif; font-weight: 400;">Vegan Dog Treats</h3>
+                    <p style="color: #666;">Healthy, vegan dog treats (peanut butter & pumpkin).</p>
+                    <p style="font-style: italic; color: #888;"><em>Suggested: $5+</em></p>
+               <button type="submit" class="w3-button w3-block w3-black w3-margin-top"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdXPYBZ9NT5e8OdJvDNwhE5vKVx5fH161CF54Gbvq0slnbnOA/viewform?usp=pp_url&entry.224416707=Dog+Treats" target="_blank">Fill Out the Order Form</a></button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Cookies -->
+        <div class="w3-col l4 m6 w3-padding">
+            <div class="w3-card w3-white w3-hover-shadow">
+                <img src="https://via.placeholder.com/400x300/F5F5F5/000000?text=Cookies" alt="Vegan Cookies" style="width:100%; height: auto;">
+                <div class="w3-container">
+                    <h3 style="font-family: 'Poppins', sans-serif; font-weight: 400;">Cookies (1 Dozen)</h3>
+                    <p style="color: #666;">Assorted vegan cookies (chocolate chip, oatmeal raisin).</p>
+                    <p style="font-style: italic; color: #888;"><em>Suggested: $10+</em></p>
+                     <button type="submit" class="w3-button w3-block w3-black w3-margin-top"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdXPYBZ9NT5e8OdJvDNwhE5vKVx5fH161CF54Gbvq0slnbnOA/viewform?usp=pp_url&entry.224416707=Cookies" target="_blank">Fill Out the Order Form</a></button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+      <section
+        class="w3-container w3-padding-32 w3-center w3-theme-l1"
+      >
+        <h2
+          class="w3-jumbo"
+          style="font-family: &quot;Poppins&quot;, sans-serif; font-weight: 300"
+        >
+          Pickup Schedule
+        </h2>
+        <div
+          class="w3-panel w3-leftbar w3-theme w3-border"
+          style="max-width: 800px; margin: 0 auto"
+        >
+          <p
+            class="w3-large"
+            style="
+              font-family: &quot;Poppins&quot;, sans-serif;
+              font-weight: 300;
+            "
+          >
+            <strong>Order Deadline:</strong> Orders must be placed by
+            <strong>Monday at 5 PM</strong> for pickup on
+            <strong>Saturday of the same week</strong>.
+          </p>
+          <p
+            class="w3-large"
+            style="
+              font-family: &quot;Poppins&quot;, sans-serif;
+              font-weight: 300;
+            "
+          >
+            <strong>Pickup Location:</strong> Dixboro + Geddes, Ann Arbor (address provided upon order submission)
+          </p>
+          <p
+            class="w3-large"
+            style="
+              font-family: &quot;Poppins&quot;, sans-serif;
+              font-weight: 300;
+            "
+          >
+            <strong>Pickup Time:</strong> Saturday, 10 AM - 12 PM
+          </p>
+        </div>
+        <p
+          class="w3-xlarge"
+          style="
+           
+            font-family: &quot;Poppins&quot;, sans-serif;
+            font-weight: 300;
+            margin-top: 2rem;
+          "
+        >
+          Questions? Email us at
+          <a href="mailto:kparker0405@gmail.com" class="w3-text-black"
+            >kparker0405@gmail.com</a
+          >.
+        </p>
+      </section>
+
+      <!-- Charity Section -->
+      <section
+        id="charity"
+        class="w3-container w3-padding-32 w3-center"
+    
+      >
+        <h2
+          class="w3-jumbo"
+          style="font-family: &quot;Poppins&quot;, sans-serif; font-weight: 300"
+        >
+          This Month's Charity
+        </h2>
+        <p
+          class="w3-xlarge"
+          style="
+            color: #666;
+            font-family: &quot;Poppins&quot;, sans-serif;
+            font-weight: 300;
+          "
+        >
+          This January, we're supporting <strong>Food Gatherers</strong>, a
+          nationwide network of food banks dedicated to fighting hunger in the
+          U.S.
+        </p>
+        <p
+          class="w3-large"
+          style="
+            color: #333;
+            font-family: &quot;Poppins&quot;, sans-serif;
+            font-weight: 300;
+            margin-top: 1rem;
+          "
+        >
+          All proceeds will go to Food Gatherers to help families in need.
+        </p>
+        <div class="w3-margin-top">
+          <a
+            href="https://www.feedingamerica.org/"
+            target="_blank"
+            class="w3-button w3-theme-d3 w3-padding-large"
+            style="
+              font-family: &quot;Poppins&quot;, sans-serif;
+              font-weight: 300;
+            "
+          >
+            Learn More About Food Gatherers
+          </a>
+        </div>
+      </section>
+
+      <!-- Tipping Section -->
+      <section class="w3-container w3-theme-l3 w3-padding-32 w3-center">
+        <h2
+          class="w3-jumbo"
+          style="font-family: &quot;Poppins&quot;, sans-serif; font-weight: 300"
+        >
+          Support Us
+        </h2>
+        <p
+          class="w3-xlarge"
+          style="
+            
+            font-family: &quot;Poppins&quot;, sans-serif;
+            font-weight: 300;
+          "
+        >
+          If you enjoyed our baked goods, feel free to leave a tip!
+        </p> <div class="w3-margin-top">
+          <a
+            href="https://paypal.me/katparker0405"
+            target="_blank"
+            class="w3-button w3-theme-d3 w3-padding-large"
+            style="
+              font-family: &quot;Poppins&quot;, sans-serif;
+              font-weight: 300;
+            "
+          >
+            Leave a Tip
+          </a>
+        </div>
+     
+      </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="w3-container w3-teal w3-center w3-padding">
-        <p>© 2026 Sweet Delights Bakery | Contact: your-email@example.com</p>
+    <footer class="w3-container w3-theme w3-center w3-padding-32">
+      <p style="font-family: &quot;Poppins&quot;, sans-serif; font-weight: 300">
+        © 2026 Kat's Vegan Bake Sale | Contact: kparker0405@gmail.com
+      </p>
     </footer>
-</body>
+  </body>
 </html>
-
